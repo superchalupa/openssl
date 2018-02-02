@@ -254,9 +254,11 @@ const EVP_MD *X_EVP_dss1() {
 	return EVP_dss1();
 }
 
+#if 0
 const EVP_MD *X_EVP_sha() {
 	return EVP_sha();
 }
+#endif
 
 int X_EVP_CIPHER_CTX_encrypting(const EVP_CIPHER_CTX *ctx) {
 	return ctx->encrypt;

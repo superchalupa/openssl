@@ -277,8 +277,8 @@ func getDigestFunction(digest EVP_MD) (md *C.EVP_MD) {
 		md = C.X_EVP_md_null()
 	case EVP_MD5:
 		md = C.X_EVP_md5()
-	case EVP_SHA:
-		md = C.X_EVP_sha()
+//	case EVP_SHA:
+//		md = C.X_EVP_sha()
 	case EVP_SHA1:
 		md = C.X_EVP_sha1()
 	case EVP_DSS:
